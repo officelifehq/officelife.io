@@ -1,0 +1,13 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.home-svg-domain {
+    min-width: 15px;
+    top: 5px;
+}
+
+.home-main-screenshot {
+    border-radius: 8px;
+    box-shadow: 0 24px 35px rgba(32, 37, 45, .1);
+}
