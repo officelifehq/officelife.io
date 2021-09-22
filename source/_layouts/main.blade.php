@@ -14,13 +14,13 @@
 
 <body class="text-gray-900 font-sans antialiased md:p-0 p-4">
 
-  <div class="container mx-auto w-full max-w-4xl flex justify-between mb-14 mt-8 items-center">
-    <img src="/assets/images/officelife.svg" />
+  <div class="container mx-auto w-full max-w-4xl flex justify-between mb-16 mt-8 items-center">
+    <a href="{{ $page->baseUrl }}"><img src="/assets/images/officelife.svg" /></a>
 
     <ul>
-      <li class="inline mr-4">Features</li>
+      <li class="inline mr-4"><a href="{{ $page->baseUrl }}/features">Features</a></li>
       <li class="inline mr-4">Pricing</li>
-      <li class="inline mr-4">Docs</li>
+      <li class="inline mr-4"><a href="https://docs.officelife.io/documentation/introduction.html">Docs</a></li>
       <li class="inline mr-8">Blog</li>
       <li class="inline mr-4">Sign in</li>
       <li class="inline">Free trial</li>
@@ -34,6 +34,25 @@
     <li>Privacy policy</li>
     <li>Terms of use</li>
   </ul>
+
+  <script>
+    (function(src, cb) {
+      var s = document.createElement('script');
+      s.setAttribute('src', src);
+      s.onload = cb;
+      (document.head || document.body).appendChild(s);
+    })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+      window.Blinkloader.optimize({
+        pubkey: '52fe97dfda7420ab1741',
+        fadeIn: false,
+        lazyload: true,
+        smartCompression: true,
+        responsive: true,
+        retina: true,
+        webp: true
+      });
+    })
+  </script>
 </body>
 
 </html>
