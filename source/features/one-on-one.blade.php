@@ -4,11 +4,11 @@
 <div class="container mx-auto w-full max-w-4xl mb-14">
   <h3 class="mb-8 text-center text-5xl">1:1 management</h3>
 
-  <p class="mb-16 max-w-prose text-center mx-auto text-xl">Communication between employees and team members is critical to the success of the company. Work logs let employees record what they have done, once per day, so everyone knows what's going on.</p>
+  <p class="mb-16 max-w-prose text-center mx-auto text-xl">One on ones between a manager and her direct reports are critical for both parties. It's a privileged moment to understand what's going on, to discuss challenges and to talk about how to grow. OfficeLife makes this entire process super easy and actually fun.</p>
 
-  <h3 class="mb-8 text-center text-3xl font-bold">Keep track of what you've done, everyday.</h3>
+  <h3 class="mb-8 text-center text-3xl font-bold">Anatomy of a 1:1.</h3>
 
-  <p class="mb-8 max-w-prose text-center mx-auto	text-xl">Every day, employees can write about either what they will do, or what they have done. For remote teams on multiple timezones, this can replace a daily status meeting.</p>
+  <p class="mb-8 max-w-prose text-center mx-auto text-xl"></p>
 
   @component('_components.screenshot')
   379403fc-f74e-4fe8-8f09-2842a1a5a0ef
