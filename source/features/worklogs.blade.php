@@ -2,11 +2,11 @@
 
 @section('body')
 <div class="container mx-auto w-full max-w-4xl mb-14">
-  <h3 class="mb-8 text-center text-5xl">Accomplishments</h3>
+  <h3 class="mb-8 text-center text-5xl">Work logs</h3>
 
-  <p class="mb-16 max-w-prose text-center mx-auto text-xl">The best way to celebrate someone's efforts is to make it visible to everyone. Communication is crucial in a company - and knowing who's done what is even more important. OfficeLife lets employees brag about what they've done.</p>
+  <p class="mb-16 max-w-prose text-center mx-auto text-xl">Communication between employees and team members is critical to the success of the company. Work logs let employees record what they have done, once per day, so everyone knows what's going on.</p>
 
-  <h3 class="mb-8 text-center text-3xl font-bold">Once you've done awesome work, tell the world about it.</h3>
+  <h3 class="mb-8 text-center text-3xl font-bold">Team members have an unique view of knowing what their team mates have done.</h3>
 
   <p class="mb-8 max-w-prose text-center mx-auto	text-xl">If an employee is part of a team, (s)he can create an accomplishment. An accomplishment is something great that one or more individuals have shipped - and as it's a celebration, the design is cheerful.</p>
 
