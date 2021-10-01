@@ -2,7 +2,7 @@
 
 @section('body')
 <div class="container mx-auto w-full max-w-4xl mb-14">
-  <h3 class="mb-8 text-center text-5xl">Work logs</h3>
+  <h3 class="mb-8 text-center text-5xl">1:1 management</h3>
 
   <p class="mb-16 max-w-prose text-center mx-auto text-xl">Communication between employees and team members is critical to the success of the company. Work logs let employees record what they have done, once per day, so everyone knows what's going on.</p>
 
