@@ -1,7 +1,8 @@
 <div class="container mx-auto w-full max-w-4xl mb-14">
+  <div class="mb-6 text-2xl text-center">All the domains covered by OfficeLife</div>
   <div class="grid md:grid-cols-5 gap-4 grid-cols-1">
     <div>
-      <div class="text-xl font-semibold mb-3"><a href="{{ $page->baseUrl }}/features/recruit" class="underline">Recruit</a></div>
+      <div class="text-xl font-semibold mb-3">Recruit</div>
       <ul>
         <li class="relative flex items-start mb-3">
           <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -89,7 +90,7 @@
           <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
           </svg>
-          <span>Asset management</span>
+          <span><a href="{{ $page->baseUrl }}/features/asset-management" class="underline">Asset management</a></span>
         </li>
         <li class="relative flex items-start mb-3">
           <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -118,13 +119,13 @@
           <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
           </svg>
-          <span>Team and company news</span>
+          <span><a href="{{ $page->baseUrl }}/features/team-company-news" class="underline">Team and company news</a></span>
         </li>
         <li class="relative flex items-start mb-3">
           <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
           </svg>
-          <span>Get to know your colleagues</span>
+          <span><a href="{{ $page->baseUrl }}/features/get-to-know-your-colleagues" class="underline">Get to know your colleagues</a></span>
         </li>
       </ul>
     </div>

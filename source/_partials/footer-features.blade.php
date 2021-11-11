@@ -1,3 +1,5 @@
-<h3>But wait - there's much, much more.</h3>
+<div class="container mx-auto w-full max-w-4xl mb-14 mt-10">
+  <p class="text-center">There are much more features below.</p>
+</div>
 
-<p>OfficeLife has a lot of features. When everything is at one place, throughout the entire company, every single employee will work better.</p>
+@include('_partials.all-features')
