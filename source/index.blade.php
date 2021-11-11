@@ -5,7 +5,7 @@
   <!-- <h1 class="text-4xl font-bold text-center mb-12">OfficeLife is an open HR and planning platform.</h1> -->
   <h1 class="text-5xl font-bold text-center mb-12 leading-tight">Say goodbye to messy spreadsheets to manage employees, teams and projects.</h1>
   <p class="text-center max-w-prose mx-auto mb-4 text-2xl">OfficeLife replaces dozens of confusing softwares that no one like to use, with a single, private & simple all-in-one tool to manage the entire employee lifecycle.</p>
-  <p class="text-center max-w-prose mx-auto mb-10">Also, it's open source, and with no vendor lock-ins.</p>
+  <p class="text-center max-w-prose mx-auto mb-10">We call it the EmpOps plateform. Also, it's open source.</p>
 
   @component('_components.screenshot')
   755d110f-0163-4ccd-ac10-c600cfc73cab

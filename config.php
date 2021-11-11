@@ -3,7 +3,7 @@
 return [
     'production' => false,
     'baseUrl' => 'http://localhost:3000',
-    'title' => 'Jigsaw',
-    'description' => 'Website description.',
+    'title' => 'OfficeLife',
+    'description' => 'Our EmpOps platform is a single application for unparalleled collaboration and visibility in the entire company.',
     'collections' => [],
 ];

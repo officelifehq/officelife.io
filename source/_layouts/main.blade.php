@@ -7,6 +7,22 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="canonical" href="{{ $page->getUrl() }}">
   <meta name="description" content="{{ $page->description }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.png" />
+
+  <meta content="Our EmpOps platform is a single application for unparalleled collaboration and visibility in the entire company." name="twitter:description" />
+  <meta content="Our EmpOps platform is a single application for unparalleled collaboration and visibility in the entire company." property="og:description" />
+  <meta content="OfficeLife" property="og:site_name" />
+  <meta content="{{ $page->title }}" property="og:title" />
+  <meta content="https://github.com/officelifehq/officelife" property="og:repo" />
+  <meta content="https://app.officelife.io/" property="og:instance" />
+  <meta content="https://officelife.io/" property="og:url" />
+  <meta content="/assets/images/facebook-marketing.png" property="og:image">
+  <meta content="/assets/images/twitter-marketing.png" name="twitter:image">
+  <meta content=summary_large_image name="twitter:card" />
+  <meta content="@OfficeLifeHQ" name="twitter:site" />
+  <meta content="OfficeLife" name="twitter:title" />
+  <meta content="@OfficeLifeHQ" name="twitter:creator" />
+
   <title>{{ $page->title }}</title>
   <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
   <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
@@ -70,6 +86,10 @@
       </ul>
     </div>
   </div>
+
+  @if ($page->production)
+  <script src="https://cdn.usefathom.com/script.js" data-site="LQWOZIMC" defer></script>
+  @endif
 
   <script>
     (function(src, cb) {
