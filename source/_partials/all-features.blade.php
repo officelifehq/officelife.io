@@ -1,4 +1,4 @@
-<div class="container mx-auto w-full max-w-4xl mb-14">
+<div class="container mx-auto w-full max-w-4xl mb-14 p-4 sm:p-0">
   <div class="mb-6 text-2xl text-center">All the domains covered by OfficeLife</div>
   <div class="grid md:grid-cols-5 gap-4 grid-cols-1">
     <div>

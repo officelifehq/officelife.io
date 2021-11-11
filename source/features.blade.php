@@ -1,14 +1,14 @@
 @extends('_layouts.main')
 
 @section('body')
-<div class="container mx-auto w-full max-w-4xl mb-14">
+<div class="container mx-auto w-full max-w-4xl mb-14 p-4 sm:p-0">
   <p class="mb-8 text-center text-5xl">Doing it all, in a very simple interface.</p>
   <p class="mb-16 max-w-prose text-center mx-auto	text-xl">OfficeLife has everything you need to manage employees in a company, and to follow what's going on with them. It consists of 5 domains, that match the lifecycle of employees in a company.</p>
 </div>
 
 @include('_partials.all-features')
 
-<div class="container mx-auto w-full max-w-4xl mb-14 text-center">
+<div class="container mx-auto w-full max-w-4xl mb-14 text-center p-4 sm:p-0">
   <div class="text-left">
     <h3 class="mb-6 text-center">Our product philosophy</h3>
     <p class="max-w-prose text-3xl mb-8 text-center">Only what you need, and nothing else.</p>

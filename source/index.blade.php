@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 
 @section('body')
-<div class="container mx-auto w-full max-w-4xl mb-20">
+<div class="container mx-auto w-full max-w-4xl mb-20 p-4 sm:p-0">
   <!-- <h1 class="text-4xl font-bold text-center mb-12">OfficeLife is an open HR and planning platform.</h1> -->
   <h1 class="text-5xl font-bold text-center mb-12 leading-tight">Say goodbye to messy spreadsheets to manage employees, teams and projects.</h1>
   <p class="text-center max-w-prose mx-auto mb-4 text-2xl">OfficeLife replaces dozens of confusing softwares that no one like to use, with a single, private & simple all-in-one tool to manage the entire employee lifecycle.</p>
@@ -14,7 +14,7 @@
 
 @include('_partials.all-features')
 
-<div class="container mx-auto w-full max-w-4xl mb-20">
+<div class="container mx-auto w-full max-w-4xl mb-20 p-4 sm:p-0">
   <h3 class="mb-12 text-2xl text-center">Why did we create OfficeLife?</h3>
 
   <p class="max-w-prose mx-auto mb-6">Companies have dozens of tools to manage what’s going on inside the company. Tools to manage human resources. Timesheets. Team morale. 1-on-1 management. Expenses. OKR. You name it. For every need, there is a dedicated tool.</p>
@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<div class="container mx-auto w-full max-w-4xl">
+<div class="container mx-auto w-full max-w-4xl p-4 sm:p-0">
   <h2 class="mb-12 text-3xl text-center">3 ways to use OfficeLife in your company</h2>
 
   <div class="lg:grid grid-cols-3 gap-4">
