@@ -7,9 +7,7 @@
   <p class="text-center max-w-prose mx-auto mb-4 text-2xl">OfficeLife replaces dozens of confusing softwares that no one like to use, with a single, private & simple all-in-one tool to manage the entire employee lifecycle.</p>
   <p class="text-center max-w-prose mx-auto mb-10">We call it the EmpOps plateform. Also, it's open source.</p>
 
-  @component('_components.screenshot')
-  755d110f-0163-4ccd-ac10-c600cfc73cab
-  @endcomponent
+  @include('_components.screenshot', ['uuid' => 'd3fa5383-ce58-45f8-a56f-fceeb185932d', 'noshadow' => 'noshadow'])
 </div>
 
 @include('_partials.all-features')

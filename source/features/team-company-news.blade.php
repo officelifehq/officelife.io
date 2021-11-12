@@ -10,9 +10,7 @@
 
   <p class="mb-8 max-w-prose text-center mx-auto text-xl">Team members, and certain employees with the right permissions, can write either team news, for all team members to see, or company wide news, that will be displayed to everyone.</p>
 
-  @component('_components.screenshot')
-  65213160-bc4e-4c7d-bf21-180a898e9c82
-  @endcomponent
+  @include('_components.screenshot', ['uuid' => '65213160-bc4e-4c7d-bf21-180a898e9c82'])
 
   @include('_partials.footer-features')
 </div>

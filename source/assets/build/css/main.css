@@ -31890,6 +31890,10 @@ video {
   box-shadow: 0 24px 35px rgba(32, 37, 45, .1);
 }
 
+.home-main-screenshot.noshadow {
+  box-shadow: none;
+}
+
 .icon-header {
   top: -2px;
 }
