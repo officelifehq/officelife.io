@@ -5,6 +5,7 @@
 /.idea/
 /.vscode/
 npm-debug.log
+.DS_store
 
 # Optional ignores
 # /build_staging/
