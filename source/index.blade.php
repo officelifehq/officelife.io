@@ -1,190 +1,18 @@
 @extends('_layouts.main')
 
 @section('body')
-<div class="container mx-auto w-full max-w-4xl mb-20">
-  <h1 class="text-4xl font-bold text-center mb-4">OfficeLife is an open HR and planning platform.</h1>
-  <!-- <h1 class="text-4xl font-bold text-center mb-4">Say goodbye to messy spreadsheets to manage employees and projects.</h1> -->
-  <p class="text-center max-w-prose mx-auto mb-4">OfficeLife replaces dozens of confusing softwares that no one like to use, with a single, private & simple all-in-one tool to manage the entire employee lifecycle.</p>
-  <p class="text-center max-w-prose mx-auto mb-10">Also, it's open source, and with no vendor lock-ins.</p>
-  <img src="/assets/images/homepage-company-info.png" class="home-main-screenshot" alt="">
+<div class="container mx-auto w-full max-w-4xl mb-20 p-4 sm:p-0">
+  <!-- <h1 class="text-4xl font-bold text-center mb-12">OfficeLife is an open HR and planning platform.</h1> -->
+  <h1 class="text-5xl font-bold text-center mb-12 leading-tight">Say goodbye to messy spreadsheets to manage employees, teams and projects.</h1>
+  <p class="text-center max-w-prose mx-auto mb-4 text-2xl">OfficeLife replaces dozens of confusing softwares that no one like to use, with a single, private & simple all-in-one tool to manage the entire employee lifecycle.</p>
+  <p class="text-center max-w-prose mx-auto mb-10">We call it the EmpOps plateform. Also, it's open source.</p>
+
+  @include('_components.screenshot', ['uuid' => 'd3fa5383-ce58-45f8-a56f-fceeb185932d', 'noshadow' => 'noshadow'])
 </div>
 
-<div class="container mx-auto w-full max-w-4xl mb-14">
-  <p class="mb-10 text-center">OfficeLife gives a unique overview over everything that employees do in your company.</p>
-  <div class="grid md:grid-cols-5 gap-4 grid-cols-1">
-    <div>
-      <div class="text-xl font-semibold mb-3">Recruit</div>
-      <ul>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Applicant tracking system</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Onboarding management <span class="text-xs bg-blue-200 text-blue-800 p-0.5 rounded-md">soon</span></span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Offboarding management <span class="text-xs bg-blue-200 text-blue-800 p-0.5 rounded-md">soon</span></span>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div class="text-xl font-semibold mb-3">Manage</div>
-      <ul>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Employee management</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Team management</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Group management</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Department management <span class="text-xs bg-blue-200 text-blue-800 p-0.5 rounded-md">soon</span></span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Office management <span class="text-xs bg-blue-200 text-blue-800 p-0.5 rounded-md">soon</span></span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Company management</span>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div class="text-xl font-semibold mb-3">Operate</div>
-      <ul>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Time tracking</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Part Time Offs <span class="text-xs bg-blue-200 text-blue-800 p-0.5 rounded-md">soon</span></span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Expenses management</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Asset management</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Project management</span>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div class="text-xl font-semibold mb-3">Communicate</div>
-      <ul>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Work logs</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Accomplishments</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Team and company news</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Get to know your colleagues</span>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div class="text-xl font-semibold mb-3">Grow</div>
-      <ul>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Employee and team morale</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>1:1 management</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Rate your manager</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Skills</span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>Objectives Key Results <span class="text-xs bg-blue-200 text-blue-800 p-0.5 rounded-md">soon</span></span>
-        </li>
-        <li class="relative flex items-start mb-3">
-          <svg class="text-green-700 w-4 mr-1 home-svg-domain relative" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span>e-coffee management</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+@include('_partials.all-features')
 
-<div class="container mx-auto w-full max-w-4xl">
+<div class="container mx-auto w-full max-w-4xl mb-20 p-4 sm:p-0">
   <h3 class="mb-12 text-2xl text-center">Why did we create OfficeLife?</h3>
 
   <p class="max-w-prose mx-auto mb-6">Companies have dozens of tools to manage what’s going on inside the company. Tools to manage human resources. Timesheets. Team morale. 1-on-1 management. Expenses. OKR. You name it. For every need, there is a dedicated tool.</p>
@@ -200,57 +28,114 @@
   <p class="max-w-prose mx-auto mb-6">Moreover, most small and medium-size companies don't need all the features that each one of these tools provides. They would be completely satisfied with, say, 20% of what each specialized tool does. Take a look at Basecamp. A lot of people love using Basecamp, a simple project management tool, instead of Microsoft Project which does 90% more stuff.</p>
 
   <p class="max-w-prose mx-auto mb-6">We think there is a place for a single software that manages the entire lifecycle of an employee. By knowing everything we need to know about an employee, we can know how teams are doing, what everyone does, improve communication and gives you unique insights on how the company truly operates.</p>
-</div>
 
-<div class="container mx-auto w-full max-w-4xl">
-  <h2 class="mb-12 text-2xl text-center">3 ways to use OfficeLife in your company</h2>
-
-  <div class="lg:grid grid-cols-3 gap-4">
-    <div class="sm:mb-0 mb-6 border border-gray-500 border-solid rounded-md px-4 py-4">
-      <h3 class="text-2xl mb-6">Use our hosted version</h3>
-      <ul class="mb-3">
-        <li class="mb-3">We deal with updates, backups, security and reliability.</li>
-        <li class="mb-3">Enterprise-level infrastructure on AWS.</li>
-        <li>The database is shared amongst customers.</li>
-      </ul>
-      <p class="text-gray-500 mb-3"><span class="font-bold text-3xl text-gray-900">$7</span>/employee/month.</p>
-      <p class="text-gray-600 text-sm">No other hidden or setup fees.</p>
+  <div class="sm:text-xl font-medium flex justify-center">
+    <div class="flex flex-col items-center mr-5">
+      <div class="p-1 border-2 border-blue-300 rounded-full mb-3">
+        <a href="https://twitter.com/djaiss"><img data-blink-uuid="12e5aa8b-16ff-421f-a417-7efc0b0854a6" class="w-10 h-10 rounded-full bg-light-blue-100" /></a>
+      </div>
+      <div class="text-gray-900 text-base">Regis Freyd</div>
     </div>
-    <div class="sm:mb-0 mb-6 border border-gray-500 border-solid rounded-md px-4 py-4">
-      <h3 class="text-2xl mb-6">A private instance we host for you</h3>
-      <ul class="mb-3">
-        <li class="mb-3">We deal with updates, backups, security and reliability.</li>
-        <li>The database and server are <span class="font-bold">not</span> shared with other customers.</li>
-      </ul>
-      <p class="text-gray-500 mb-3"><span class="font-bold text-3xl text-gray-900">$25</span>/employee/month & <span class="font-bold text-3xl text-gray-900">$500</span>/month infrastructure fee.</p>
-      <p class="text-gray-600 text-sm">No other hidden or setup fees.</p>
-    </div>
-    <div class="border border-gray-500 border-solid rounded-md px-4 py-4">
-      <h3 class="text-2xl mb-6">Host it yourself on premise</h3>
-      <ul class="mb-3">
-        <li class="mb-3">Use our official Docker image.</li>
-        <li class="mb-3">You deal with updates, backups, security and reliability.</li>
-        <li>Your own infrastructure.</li>
-      </ul>
-      <p class="text-gray-500 mb-3">Free</p>
-      <p class="text-gray-600 text-sm">No other hidden or setup fees.</p>
+    <div class="flex flex-col items-center">
+      <div class="p-1 border-2 border-blue-300 rounded-full mb-3">
+        <a href="https://twitter.com/asbin"><img data-blink-uuid="25543f7e-8fb9-46b2-b0c3-b12f06e84604" class="w-10 h-10 rounded-full bg-light-blue-100" /></a>
+      </div>
+      <div class="text-gray-900 text-base">Alexis Saettler</div>
     </div>
   </div>
 </div>
 
-<div>
-  <p>OfficeLife is open source. The code is publically available on GitHub. If you want to make changes to OfficeLife, you can.</p>
+<div class="container mx-auto w-full max-w-4xl p-4 sm:p-0">
+  <h2 class="mb-12 text-3xl text-center">3 ways to use OfficeLife in your company</h2>
+
+  <div class="lg:grid grid-cols-3 gap-4 mb-8">
+    <div class="sm:mb-0 mb-6 border border-gray-400 border-solid rounded-md px-4 py-4">
+      <h3 class="text-2xl mb-6">Use our hosted version</h3>
+      <ul class="mb-6">
+        <li class="mb-3">We deal with updates, backups, security and reliability.</li>
+        <li class="mb-3">Enterprise-level infrastructure on AWS.</li>
+        <li>Servers are shared amongst customers.</li>
+      </ul>
+      <p class="text-gray-500 mb-6 text-center"><span class="font-bold text-3xl text-gray-900">$7</span>/employee/month.</p>
+      <p class="text-gray-600 text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-700 h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        Daily backups.
+      </p>
+      <p class="text-gray-600 text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-700 h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        No other hidden or setup fees.
+      </p>
+      <p class="text-gray-600 text-sm mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-700 h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        Cancel anytime.
+      </p>
+
+      <div class="text-center mb-4">
+        <a href="https://app.officelife.io/register" class="relative bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Create account
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4 relative icon-header inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="sm:mb-0 mb-6 border border-gray-400 border-solid rounded-md px-4 py-4">
+      <h3 class="text-2xl mb-6">Your private instance we host for you</h3>
+      <ul class="mb-3">
+        <li class="mb-6">We deal with updates, backups, security and reliability.</li>
+        <li>The database and servers are <span class="font-bold">not</span> shared with other customers.</li>
+      </ul>
+      <p class="text-gray-500 mb-6 text-center"><span class="block"><span class="font-bold text-3xl text-gray-900">$25</span>/employee/month</span> + <span class="block"><span class="font-bold text-3xl text-gray-900">$500</span>/month infrastructure fee.</span></p>
+      <p class="text-gray-600 text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-700 h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        No other hidden or setup fees.
+      </p>
+      <p class="text-gray-600 text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-700 h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        Your own private instance.
+      </p>
+      <p class="text-gray-600 text-sm mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-700 h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        Cancel anytime.
+      </p>
+      <div class="text-center mb-4">
+        <a href="mailto:contat@officelife.io" class="bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Contact us</a>
+      </div>
+    </div>
+    <div class="border border-gray-400 border-solid rounded-md px-4 py-4">
+      <h3 class="text-2xl mb-6">Host it yourself on premise</h3>
+      <ul class="mb-6">
+        <li class="mb-3">Use our official Docker image.</li>
+        <li class="mb-3">You deal with updates, backups, security and reliability.</li>
+        <li>Your own infrastructure.</li>
+      </ul>
+      <p class="font-bold text-3xl text-gray-900 mb-6 text-center">Free</p>
+      <p class="text-gray-600 text-sm mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-700 h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        No other hidden or setup fees.
+      </p>
+      <div class="text-center mb-4">
+        <a href="https://github.com/officelifehq/officelife" class="bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Code on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xl max-w-prose mx-auto">The first 30 days are on us - no credit card needed. After 30 days, you'll need to upgrade your account to continue using it.</p>
 </div>
 
-<div>
-  <h3>Rock solid infrastructure</h3>
-  <p>We use Fortrabbit, built on top of Amazon Web Services to store the application and your data.</p>
-  <ul>
-    <li>ISO 27001, PCI Level 1, SOC 1 and SOC 2/SSAE 16/ISAE 3402.</li>
-    <li>Data is encrypted in transit and at rest.</li>
-    <li>Redundant RDS instances for our databases.</li>
-    <li>Daily encrypted backups.</li>
-    <li>Infinitely scalable platform.</li>
-  </ul>
-</div>
 @endsection
