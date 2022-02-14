@@ -48,7 +48,7 @@
 <div class="container mx-auto w-full max-w-4xl p-4 sm:p-0">
   <h2 class="mb-12 text-3xl text-center">3 ways to use OfficeLife in your company</h2>
 
-  <div class="lg:grid grid-cols-3 gap-4">
+  <div class="lg:grid grid-cols-3 gap-4 mb-8">
     <div class="sm:mb-0 mb-6 border border-gray-400 border-solid rounded-md px-4 py-4">
       <h3 class="text-2xl mb-6">Use our hosted version</h3>
       <ul class="mb-6">
@@ -134,6 +134,8 @@
       </div>
     </div>
   </div>
+
+  <p class="text-xl max-w-prose mx-auto">The first 30 days are on us - no credit card needed. After 30 days, you'll need to upgrade your account to continue using it.</p>
 </div>
 
 @endsection

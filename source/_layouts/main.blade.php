@@ -82,7 +82,7 @@
         <li class="sm:inline block mb-3 sm:mb-0 sm:mr-5">Made with <span style="color: transparent; text-shadow: 0 0 #fff;">♥︎</span> in Montreal and Paris.</li>
         <li class="sm:inline block mb-3 sm:mb-0 sm:mr-5">Privacy policy</li>
         <li class="sm:inline block mb-3 sm:mb-0 sm:mr-5">Terms of use</li>
-        <li class="sm:inline block mb-3 sm:mb-0">Copyright ©2021 OfficeLife.</li>
+        <li class="sm:inline block mb-3 sm:mb-0">Copyright ©2022 OfficeLife.</li>
       </ul>
     </div>
   </div>
